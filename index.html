@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noori | Official Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #1a1a1a;
+            color: #f5f5f5;
+        }
+        header {
+            background-color: #ffd700;
+            padding: 40px 20px;
+            text-align: center;
+            color: #1a1a1a;
+        }
+        header img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #1a1a1a;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .buttons {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .buttons a, .buttons button {
+            background-color: #ffd700;
+            color: #1a1a1a;
+            padding: 15px 30px;
+            margin: 10px;
+            border: none;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .buttons a:hover, .buttons button:hover {
+            background-color: #e6c200;
+        }
+        .form-container {
+            max-width: 500px;
+            margin: 40px auto;
+            background: #2a2a2a;
+            padding: 20px;
+            border-radius: 12px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 6px;
+            background-color: #1a1a1a;
+            color: white;
+        }
+        form button {
+            margin-top: 15px;
+            background-color: #ffd700;
+            color: #1a1a1a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://i.imgur.com/fJu9ceU.jpg" alt="Noori">
+        <h1>Noori</h1>
+        <p>Hi! I'm Noori, a 15-year-old video creator from Pakistan. Born on Dec 10, 2009. Let's create something amazing together!</p>
+    </header>
+    <div class="buttons">
+        <a href="mailto:nooripakistan047@gmail.com">Contact Me</a>
+        <a href="#sponsor">Sponsor</a>
+        <a href="#collab">Collab</a>
+    </div>
+
+    <div id="sponsor" class="form-container">
+        <h2>Sponsorship Request</h2>
+        <form action="mailto:nooripakistan047@gmail.com" method="POST" enctype="text/plain">
+            <label>Topic:</label>
+            <input type="text" name="Topic" required>
+            <label>Your Name:</label>
+            <input type="text" name="Your Name" required>
+            <label>Which Company You Handle?</label>
+            <input type="text" name="Company Name" required>
+            <label>How much will you pay us?</label>
+            <input type="text" name="Payment Offer" required>
+            <label>Additional Information:</label>
+            <textarea name="Additional Info" rows="4"></textarea>
+            <button type="submit">Send Sponsorship Request</button>
+        </form>
+    </div>
+
+    <div id="collab" class="form-container">
+        <h2>Collab With Me</h2>
+        <form action="mailto:nooripakistan047@gmail.com" method="POST" enctype="text/plain">
+            <label>Your Name:</label>
+            <input type="text" name="Collaborator Name" required>
+            <label>Collab Idea:</label>
+            <textarea name="Collab Idea" rows="4" required></textarea>
+            <label>Social Media/Portfolio Link:</label>
+            <input type="text" name="Social Link">
+            <button type="submit">Send Collab Request</button>
+        </form>
+    </div>
+</body>
+</html>
